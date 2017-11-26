@@ -121,6 +121,7 @@ export default class Webcam extends Component {
       const constraints = {
         video: {
           optional: [{ sourceId: videoSource }],
+          facingMode: { exact: "environment" }
         },
       };
 
